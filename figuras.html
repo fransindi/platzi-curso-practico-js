@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geometricas</h1>
+        <p>Te brindamos la ayuda que necesitas para calcular las formulas basicas de las figuras geometricas mas conocidas!</p>
+    </header>
+    <section class="form--container">
+        
+        <article class="form-cuadradro--container form-figura--container">
+            <h2 class="form-flotante--title">Cuadrado</h2>
+             <label for="inputCuadrado">
+                 Cuanto mide cada lado de tu cuadrado?
+                <hr>
+                <input type="number" id="inputCuadrado">
+            </label>
+             <div class="form-button--container">
+             <button type="button" onclick="calcularPerimetroCuadrado()">
+                 Calcular Perimetro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                  Calcular Area
+             </button>
+            </div>
+        </article>
+        <article class="form-triangulo--container form-figura--container">
+            <h2>Triangulo</h2>
+            <label for="trianguloLado1">
+                Ingresa el primer lado del triangulo
+            <hr>
+            <input type="number" id="trianguloLado1">
+        </label>
+            <label for="trianguloLado2">
+                Ingresa el segundo lado del triangulo
+            <hr>
+                <input type="number" id="trianguloLado2">
+            </label>
+            <label for="trianguloBase">
+                Ingresa la base del triangulo
+            <hr>
+                <input type="number" id="trianguloBase">
+            </label>
+            <label for="trianguloAltura">
+                Ingresa la altura del triangulo
+            <hr>
+                <input type="number" id="trianguloAltura">
+            </label>
+            <div class="form-button--container">
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular Perimetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcular Area
+            </button>
+            <button type="button" onclick="calcularAlturaTriangulo()">
+                Calcular Altura
+            </button>
+        </div>
+        </article>
+        <article class="form-circulo--container form-figura--container">
+            <h2>Circulo</h2>
+            <label for="circuloRadio">
+                Ingresa el radio del circulo.
+            <hr>
+                <input type="number" id="circuloRadio">
+            </label>
+            <div class="form-button--container">
+            <button type="button" onclick="calcularDiametroCirculo()">
+                Calcular Diametro
+            </button>
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular Perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular Area
+            </button>
+        </div>
+        </article>
+    </section>
+    
+    <script src="./figuras.js"></script>
+</body>
+</html>

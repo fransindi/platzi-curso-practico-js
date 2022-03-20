@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+input{
+    width: 140px;
+    height: 16px;
+    border: solid black 1px;
+    margin: 10px auto;
+}
+label{
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+    color: black;
+}
+header{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: orange;
+}
+header h1{
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    padding-top: 30px;
+    
+}
+header p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #1244a1;
+    padding-top: 15px;
+}
+.form--container{
+    overflow-x: scroll;
+    scroll-behavior: contain;
+    scroll-snap-type: x proximity;
+    display: flex;
+ 
+    height: 70vh;
+    margin-top: 20px;
+    text-align: center;
+}
+hr{
+    border: none;
+}
+.form-figura--container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 280px;
+    height: 350px;
+    margin: 0 35px;
+    padding: 10px 5px;
+    background-color: #aec2e6;
+    border: solid 1px rgb(24, 22, 22);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0.87, 0.70, 0.30, 0.6);
+}
+
+.form-button--container{
+    display: flex;
+    justify-content: space-around;
+    
+    justify-self: flex-end;
+}
+.form-button--container button{
+    width: 80px;
+    height: 50px;
+    max-width: 800px;
+    padding: 3px 2px;
+    background-color: rgb(255, 233, 194);
+    border: solid 1px black;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
