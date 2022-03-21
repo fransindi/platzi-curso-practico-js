@@ -35,8 +35,9 @@ header p{
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 500;
-    color: #1244a1;
+    color: #001336;
     padding-top: 15px;
+
 }
 .form--container{
     overflow-x: scroll;
